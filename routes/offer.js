@@ -7,10 +7,10 @@ const Offer = require("../models/Offer");
 
 const cloudinary = require("cloudinary").v2;
 cloudinary.config({
-    cloud_name: 'dpnhjsacc',
-    api_key: '478749485171525',
-    api_secret: 'VqcfUGqC2jJHzvws28gj-YFt0qg',
-    secure: true,
+    cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
+  secure: true,
 });
 
 
@@ -82,7 +82,7 @@ router.get("/offers", async (req, res) => {
         // res.render('home', offers);
 
     } catch (error) {
-        res.status(400).send("Mierda");
+        res.status(400).send("Mince ça coince ! ");
     }
 })
 
@@ -197,7 +197,7 @@ router.get("/offer/:id", async (req, res) => {
 
         //   res.render('home', {offer: offer});
     } catch (error) {
-        res.status(400).send("Mierda again");
+        res.status(400).send("Mince ça coince!");
 
     }
 
