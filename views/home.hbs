@@ -1,0 +1,23 @@
+<h2>Listing</h2>
+
+<hr>
+
+
+
+
+{{#with offer}}
+{{product_name}}
+{{/with}}
+
+<ul>
+{{#each offer}}
+<li>
+Nom : {{product_name}}
+Marque {{products_details.MARQUE}}
+</li>
+{{/each}}
+</ul>
+<hr>
+
+
+{{#each offer}}  Produit : {{this.product_name}} {{/each}}

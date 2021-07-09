@@ -1,0 +1,26 @@
+{
+  "name": "vinted",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cloudinary": "^1.26.2",
+    "crypto-js": "^4.0.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "express-handlebars": "^5.3.2",
+    "formidable": "^1.2.2",
+    "mongoose": "^5.13.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.10",
+    "uid2": "^0.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
