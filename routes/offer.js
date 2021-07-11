@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express()
-const isAuthenticated = require("../middlewares/isAuthenticated")
+const isAuthenticated = require("../middleware/isAuthenticated")
 const cloudinary = require("cloudinary").v2
 
 // import des model
