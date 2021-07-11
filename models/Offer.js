@@ -1,8 +1,8 @@
 // Model USER
 
-const mongoose = require("mongoose");
+const mongoose = require('mongoose')
 
-const Offer = mongoose.model("Offer", {
+const Offer = mongoose.model('Offer', {
 
     product_name: String,
     product_description: String,
@@ -12,9 +12,8 @@ const Offer = mongoose.model("Offer", {
     product_image: { type: mongoose.Schema.Types.Mixed, default: {} },
     owner: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
+      ref: 'User',
     },
-  });
+  })
 
-
-module.exports = Offer;
+module.exports = Offer

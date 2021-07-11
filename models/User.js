@@ -1,9 +1,8 @@
 // Model USER
 
-const mongoose = require("mongoose");
+const mongoose = require('mongoose')
 
-const User = mongoose.model("User", {
-
+const User = mongoose.model('User', {
     email: {
         unique: true,
         type: String,
@@ -22,4 +21,4 @@ const User = mongoose.model("User", {
 
 })
 
-module.exports = User;
+module.exports = User
