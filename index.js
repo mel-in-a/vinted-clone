@@ -29,6 +29,7 @@ const isAuthenticated = require('./middleware/isAuthenticated')
 const app = express()
 app.use(formidable())
 app.use(morgan('dev'))
+app.use(cors())
 
 // params template
 // view engine setup
