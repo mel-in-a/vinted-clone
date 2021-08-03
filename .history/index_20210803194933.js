@@ -75,7 +75,7 @@ app.post("/upload", isAuthenticated, async (req, res) => {
   }
 });
 
-app.post("/pay", isAuthenticated, async (req, res) => {
+app.post("/pay", isAuthenticated,async (req, res) => {
   // Réception du token créer via l'API Stripe depuis le Frontend
   const stripeToken = req.fields.stripeToken;
   // Créer la transaction
