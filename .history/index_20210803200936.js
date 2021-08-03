@@ -5,7 +5,6 @@ const formidable = require("express-formidable");
 const morgan = require("morgan");
 const path = require("path");
 const cors = require("cors");
-const stripe = require("stripe")("pk_test_wiKmQhimVLDgtX1USd4bOrkp00T9j2SleZ");
 // var hbs  = require('express-handlebars')
 
 // database
@@ -83,7 +82,7 @@ app.post("/pay", isAuthenticated, async (req, res) => {
   const response = await stripe.charges.create({
     amount: req.fields.price,
     currency: "eur",
-    description: req.fields.description,
+    description: req.fieldstitle,
     // On envoie ici le token
     source: stripeToken,
   });

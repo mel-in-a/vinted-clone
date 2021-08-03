@@ -16,6 +16,7 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.10",
     "standard": "^16.0.3",
+    "stripe": "^8.167.0",
     "uid2": "^0.0.3"
   },
   "devDependencies": {},
