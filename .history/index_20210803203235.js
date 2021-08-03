@@ -5,7 +5,7 @@ const formidable = require("express-formidable");
 const morgan = require("morgan");
 const path = require("path");
 const cors = require("cors");
-const stripe = require("stripe")(process.env.CLE_PRIVE_STRIPE);
+const stripe = require("stripe")(process.env.CLE);
 // var hbs  = require('express-handlebars')
 
 // database
